@@ -1,0 +1,20 @@
+a{
+    color:#177c4f;
+    text-decoration: wavy;
+
+}
+.pink-background{
+background-color: #ff93c9;
+}
+.yellow-background{
+background-color: #ffff8a;
+}
+.purple-background{
+    background-color: #bb9bff;
+}
+
+#my-name{
+    color: #151414;
+    background-color: #71e471;
+    padding:10xp
+}
