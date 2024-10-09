@@ -1,0 +1,35 @@
+body{
+    font-size: 24px;
+}
+
+main{
+background-color: #169741;
+width: 80%;
+margin: 0 auto;
+
+}
+
+#yellow{
+    background-color: #ffffad;
+}
+p{
+    color: #e34a97;
+    text-align: center;
+    width: 40%;
+    margin:0 auto;
+    
+
+}
+
+footer p{
+    color:#3d3d4d ;
+}
+
+a:hover{
+    background-color: #33ffff;
+    color: #00b463;
+}
+
+img{
+    width: 50%;
+}
