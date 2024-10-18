@@ -1,11 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
 
-
+header{
+  
+  background-color:#e59138;
+}
+.home-title{
+    color: #38751d;
+    font-size: 2em;
+    margin-top: 10px;
+}
+ 
 #background{
-    height: 325px;
+    height: 725px;
     background-color: #38751d;
 }
+
 .centered{
     text-align: center;
+    
+}
+/* Nav */
+nav a{
+text-align: center;
+color: white;
+text-decoration: none;
+padding: 35px;
+}
+nav a:hover {
+    background-color:#f1c131;
+    color: black;
 }
 
 .color{
@@ -15,7 +38,7 @@
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Whitewater-rafting.jpg");
+    background-image: linear-gradient(#00000080, #00000080), url("images/Whitewater-rafting.jpg");
   
     /* Set a specific height */
     height: 50%;
@@ -28,20 +51,97 @@
   }
   
   /* Place text in the middle of the image */
-  .hero-text {
+  .hero-msg {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #38751d;
   }
-
+  /* Buttons */
+.book, .join{
+    background-color: #38751d;
+    color:white;
+   text-decoration: none; 
+   font-size: 18px;
+   padding: 15px 30px;
+   margin-top: 50px;
+   border-radius: 5px;
+}
+.book:hover, .join:hover{
+    background-color:#f1c131 ;
+    color:black;
+}
+/* Body */
   body {
     background-color:#3c7ed2; 
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+.card-img{
+border: 10px solid #6aa74f;
+}
+.rivers-card, .capming-card, .rapids-card{
+    margin: 200px 0;
+}
+#content{
+    max-width: 1600px;
+}
+/* Footer */
+footer{
+    background-color: #6aa74f;
+    color:black;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+footer a{
+    color: #3c7ed2;
+    text-decoration: none;
+}
+footer a:hover{
+    color: white;
+}
+footer .social img{
+    padding-top: 15px;
+}
+/* Text */
+h4{
+    color: white;
+}
+.msg h2{
+    color: white;
+}
+.msg p{
+    color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.msg{
+    background-color: #e59138;
+    line-height: 1.5em;
+    padding: 35px;
+}
+h2{
+    margin: 0;
 }
 
-nav a:hover {
-    background-color:#f1c131;
-    text-emphasis-color: white;
+/* Logo */
+.logo, .icon{
+    width: 80px;
+    height: 80px;
+}
+#logo_link{
+    padding-top: 5px;
+}
+/* Icons */
+.icon{
+    padding-top: 10px;
+}
+main section img{
+    box-sizing: border-box;
 }

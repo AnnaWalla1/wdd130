@@ -1,0 +1,14 @@
+img{
+    width: 100%;
+}
+
+
+
+body{
+    background-color: #4c779f;
+}
+
+main{
+    max-width: 600px;
+    margin: 0 auto;
+}
