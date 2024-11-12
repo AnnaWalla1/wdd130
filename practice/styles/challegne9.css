@@ -1,0 +1,28 @@
+.blogStats{
+    max-width: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #3F5B8B;
+    column-gap: 10px;
+    column-gap: blue;
+    color: white;
+    border-radius: 10px;
+}
+.blogPost{
+max-width: 400px;
+border-radius: 10px;
+
+}
+.read{
+grid-column: 1/2;
+
+}
+.views{
+grid-column: 2/3;
+
+}
+.comments{
+grid-column: 3/4;
+
+}
