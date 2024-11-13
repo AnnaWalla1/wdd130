@@ -1,5 +1,5 @@
 .total{
-background-color: #3c7ed2;
+    background-color: #3c7ed2;
 }
 header{
   
@@ -14,6 +14,52 @@ nav{
     max-height: 100px;
     justify-content: space-around;
 }
+
+
+
+ /* MAIN*/
+ main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+ }
+ /* Canyon Route*/
+.canyon{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 10px, #38751d;
+}
+/* Swirly Canyon Route*/
+.swirlycan{
+    grid-column:3/4 ;
+    grid-row: 2/3;
+    border: 10px, #38751d;
+}
+/* Scenic Route*/
+.scenic{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: 10px, #38751d;
+}
+/* Staircase route*/
+.stair{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    border: 10px, #38751d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER*/
 footer{
     background-color: #e59138;
