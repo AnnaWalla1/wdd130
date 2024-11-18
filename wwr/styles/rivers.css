@@ -23,6 +23,11 @@ nav{
     max-height: 100px;
     display: flex;
     justify-content: space-around;
+    color: white;
+}
+nav a:hover {
+    background-color:#f1c131;
+    color: black;
 }
 
 #hero-img{
