@@ -1,4 +1,7 @@
-.total{
+body{
+     width: 10  0%;
+}
+  .total{
     background-color: #3c7ed2;
 }
 header{
@@ -7,45 +10,112 @@ header{
     display: grid;
     grid-template-columns: 150px auto;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-height: 100px;
   }
   /* NAV */
 nav{
     max-width: 100%;
     max-height: 100px;
-    justify-content: space-around;
 }
 
-
+#hero-img{
+    max-height: 600px;
+    max-width: 100%;
+}
 
  /* MAIN*/
  main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
  }
+/* Section-fun photos*/
+section {
+    grid-column: 1/5;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+
+}
+.jumping,
+.oar,
+.river-Img,
+.raft {
+    object-fit: cover; /* Makes sure images fill the grid area nicely */
+    max-width: 50%;
+    justify-self: center;
+} 
+.jumping{
+    grid-column: 1/2;
+    grid-row: 1;        
+ 
+}
+.oar{
+    grid-column: 2/3;
+    grid-row: 1;
+ 
+}
+.river-Img{
+    grid-column: 3/4;
+    grid-row: 1;
+    border: 10px solid #38751d;
+    border-radius: 10px;
+}
+.raft{
+    grid-column: 4/5;
+    grid-row: 1;
+}
+
  /* Canyon Route*/
+ .canyon, .swirlycan, .scenic, .stair{
+    width: 80%; /* Makes sure the image takes up the full width of the container */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: contain;
+ }
 .canyon{
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 2;
     border: 10px, #38751d;
+    object-fit:contain;
+}
+.canyon-MSG{
+    grid-column: 2/3;
+    grid-row: 2;
 }
 /* Swirly Canyon Route*/
 .swirlycan{
     grid-column:3/4 ;
-    grid-row: 2/3;
+    grid-row: 2;
     border: 10px, #38751d;
+}
+.swirlyCan-MSG{
+    grid-column: 4/5;
+    grid-row: 2;
 }
 /* Scenic Route*/
 .scenic{
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 3;
     border: 10px, #38751d;
+}
+.scenic-MSG{
+    grid-column: 2/3;
+    grid-row: 3;
 }
 /* Staircase route*/
 .stair{
     grid-column: 3/4;
-    grid-row: 3/4;
+    grid-row: 3;
     border: 10px, #38751d;
+}
+.stair-MSG{
+    grid-column: 4/5;
+    grid-row: 3;
 }
 
 
@@ -63,6 +133,7 @@ nav{
 /* FOOTER*/
 footer{
     background-color: #e59138;
+    max-height: 100px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 }
@@ -78,14 +149,25 @@ footer{
 .contactUS{
     grid-column: 4/5;
 }
+.social  {
+    grid-column: 6/9;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
 .facebook_icon{
-    grid-column: 5/6;  
+    width: 100%;
+    text-decoration: none;
+    align-self: center;
   }
-  .twitter_icon{
-    grid-row: 7/8;
+.twitter_icon{
+    width: 100% ;
+    text-decoration: none;
   }
-  .instagram_icon{
-    grid-column: 8/9;
+.instagram_icon{
+    text-decoration: none;
+    width: 100%;
   }
 
 
@@ -93,7 +175,7 @@ footer{
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
-        height: auto;
+        height: auto;  
     }
     nav, footer {
         flex-direction: column;
