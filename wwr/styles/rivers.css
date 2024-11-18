@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
 body{
      width: 10  0%;
+     font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
 }
   .total{
     background-color: #3c7ed2;
