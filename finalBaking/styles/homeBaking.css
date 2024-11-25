@@ -1,0 +1,65 @@
+.logo{
+    max-height: 80px;
+    max-width: 100%;
+}
+#hero-img{
+    max-height: 600px;
+    
+}
+
+#hero-box-img {
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+
+/* Section-fun photos*/
+section {
+    grid-column: 1/5;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+
+}
+.jumping,
+.oar,
+.river-Img,
+.raft {
+    object-fit: cover; /* Makes sure images fill the grid area nicely */
+    max-width: 50%;
+    justify-self: center;
+    border: 10px solid #6f7364;
+    border-radius: 10px;
+} 
+.jumping{
+    grid-column: 1/2;
+    grid-row: 1;        
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+}
+.oar{
+    grid-column: 2/3;
+    grid-row: 1;
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+}
+.river-Img{
+    grid-column: 3/4;
+    grid-row: 1;
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+}
+.raft{
+    grid-column: 4/5;
+    grid-row: 1;
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+}

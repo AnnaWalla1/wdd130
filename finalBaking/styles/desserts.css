@@ -1,0 +1,106 @@
+.logo{
+    max-height: 80px;
+}
+
+section {
+    grid-column: 1/5;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+
+}
+.jumping,
+.oar,
+.river-Img,
+.raft {
+    object-fit: cover; /* Makes sure images fill the grid area nicely */
+    max-width: 50%;
+    justify-self: center;
+    border: 10px solid #6f7364;
+    border-radius: 10px;
+} 
+.jumping{
+    grid-column: 1/2;
+    grid-row: 1;        
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+    max-height: 300px;
+}
+.oar{
+    grid-column: 2/3;
+    grid-row: 1;
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+    max-height: 300px;
+}
+.river-Img{
+    grid-column: 3/4;
+    grid-row: 1;
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+    max-height: 300px;
+}
+.raft{
+    grid-column: 4/5;
+    grid-row: 1;
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+    max-height: 300px;
+}
+
+/*   photos and msg in grid*/
+div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+.dino{
+    grid-column: 1/2;
+    grid-row: 1/2;        
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+    max-height: 300px;
+}
+.dino-MSG{
+    grid-column: 2/3;
+    grid-row:1/2 ; 
+}
+/*  Snake Cake*/
+.snake{
+    grid-column: 3/4;
+    grid-row: 1/2; 
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+    max-height: 300px;
+}
+.snake-MSG{
+    grid-column: 4/5;
+    grid-row: 1/2; 
+}
+/*  Aligator Cake*/
+.aligator{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+    max-height: 300px;
+}
+.aligator-MSG{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+/*  Pepper Cake*/
+.pepper{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border: 10px solid #83C5BE;
+    border-radius: 10px;
+    max-height: 300px;
+}
+.pepper-MSG{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
