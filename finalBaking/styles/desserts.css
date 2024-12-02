@@ -1,8 +1,16 @@
 .logo{
     max-height: 80px;
+    max-width: 100%;
+}
+nav{
+  background-color: #FFC857; 
+  max-width: 100%; 
+  max-height: 100px;
+  text-decoration: none;
+  
 }
 
-section {
+section {  /* Or is it main?? */
     grid-column: 1/5;
     grid-row: 1;
     display: grid;
@@ -10,6 +18,14 @@ section {
     grid-template-rows: 1fr;
     align-items: center;
 
+}
+#main-section{
+    grid-column: 1/5;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
 }
 .jumping,
 .oar,

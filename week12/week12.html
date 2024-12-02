@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/week12.css">
+</head>
+<body>
+    <h1>LEGOS</h1>
+    <button class="accordion">The History of LEGO</button>
+    <div class="panel">
+      <p>LEGO bricks were first introduced in 1949 by Danish carpenter Ole Kirk Christiansen. Initially, they were simple wooden toys, but in 1958, LEGO introduced the iconic plastic interlocking brick design that we know today. Over the decades, the brand grew to become one of the most popular toys in the world, inspiring creativity, imagination, and learning in children and adults alike.</p>
+    </div>
+    
+    <button class="accordion">Endless Possibilities for Creativity</button>
+    <div class="panel">
+      <p>LEGO sets allow builders to create anything their imagination can dream up, from castles and spaceships to entire cities. With a wide variety of themed sets—ranging from Star Wars to Architecture—LEGO offers something for every interest. The small, colorful bricks are a powerful tool for developing problem-solving skills, spatial awareness, and teamwork in builders of all ages.</p>
+    </div>
+    
+    <button class="accordion">LEGO in Popular Culture</button>
+    <div class="panel">
+      <p>LEGO has evolved beyond just toys to become a cultural phenomenon. The LEGO Movie, video games, and even theme parks like LEGOLAND have solidified its place in entertainment. Fans around the world gather at conventions, create intricate designs, and share their creations online. LEGO is more than just a toy—it's a platform for self-expression and fun for people of all ages.
+
+      </p>
+    </div>   
+    <script>
+     var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}  
+    </script>
+</body>
+</html>
