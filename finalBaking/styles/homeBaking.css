@@ -128,22 +128,46 @@ section {
     border-radius: 10px;
 }
 /* ABOUT ME*/
+.about-Me{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.me{
+    max-height: 400px;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.aboutME-Head{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: #ED706E;
+    font-size: 3em;
+}
+.aboutME-MSG{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    font-size: 1.25em;
+    color: white;
+}
 
-.about-ME{
+/*OLD CODE*/
+/* .about-ME{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 /*IMG*/
-.me{
+/* .me{
     max-height: 400px;
     grid-column: 2/3;
 }
 /*Paragraph*/
-.aboutME-MSG{
+/* .aboutME-MSG{
 color: white;
 grid-column: 3/4;
-}
+font-size: 1.25em;
+}  */
 /* Mobile screen*/
 @media screen and (max-width: 900px) {
     #hero, .home-grid {

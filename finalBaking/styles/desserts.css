@@ -107,6 +107,7 @@ section {  /* Or is it main?? */
     grid-row: 1/4;
     max-height: 300px;
     border-radius: 10px;
+    margin-left: 50px;
 }
 .sprinkle-head{
     grid-column: 2/3;
@@ -127,6 +128,7 @@ section {  /* Or is it main?? */
     max-height: 300px;
     width: 75%;
     border-radius: 10px;
+    margin-left: 50px;
 }
 .tcho-head{
     grid-column: 4/5;
@@ -135,6 +137,7 @@ section {  /* Or is it main?? */
 .choco-Msg{
     grid-column: 4/5;
     grid-row: 2/3;
+    margin-right: 50px;
 }
 .choco-Rec{
     grid-column: 4/5;
@@ -144,8 +147,9 @@ section {  /* Or is it main?? */
 .reeses-Img{
     grid-column: 1/2;
     grid-row: 4/7;
-    max-height: 300px;
+    width: 300px;
     border-radius: 10px;
+    margin-left: 50px;
 }
 .reeses-head{
     grid-column: 2/3;
@@ -158,13 +162,24 @@ section {  /* Or is it main?? */
 .reeses-Rec{
     grid-column: 2/3;
     grid-row: 6/7;
+    margin-bottom: 50px;
 }
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
 /* Peppermint*/
 .pepper-Img{
     grid-column: 3/4;
     grid-row: 4/7;
     max-height: 300px;
     border-radius: 10px;
+    margin-left: 50px;
 }
 .pepper-head{
     grid-column: 4/5;
@@ -173,11 +188,14 @@ section {  /* Or is it main?? */
 .pepper-Msg{
     grid-column: 4/5;
     grid-row: 5/6;
+    margin-right: 50px;
 }
 .pepper-Rec{
     grid-column: 4/5;
     grid-row: 6/7;
+    margin-bottom: 50px;
 }
+
 /* FOOTER*/
 footer{
     text-align: center;

@@ -70,10 +70,17 @@ section {  /* Or is it main?? */
     justify-self: center;
 
 }
+h1 {
+    color: white;
+}
+p {
+    color: white;
+}
 /* CARAMEL*/
 .caramel-Head{
     grid-column: 2/3;
     grid-row: 1/2;
+    color: white;
 }
 .caramel-Msg{
     grid-column: 2/3;
@@ -120,10 +127,12 @@ footer{
     display: flex;
     justify-content: space-around;
     color: white; 
+    align-items: center;
 }
 footer a:hover {
     background-color:#FFC857;
     color: white;
+    max-height: fit-content;
 }
 footer a{
     color: white;
