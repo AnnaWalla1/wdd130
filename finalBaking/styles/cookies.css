@@ -74,17 +74,18 @@ h1 {
     color: white;
 }
 p {
-    color: white;
+    color: black
 }
 /* CARAMEL*/
 .caramel-Head{
     grid-column: 2/3;
     grid-row: 1/2;
-    color: white;
+    
 }
 .caramel-Msg{
     grid-column: 2/3;
     grid-row: 2/3;
+    color: white;
 }
 .caramel-Rec{
     grid-column: 2/3;
